@@ -2,7 +2,7 @@ using CustomMiddleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddScoped<IGuidGenerator, GuidGenerator>();
+builder.Services.AddSingleton<IGuidGenerator, GuidGenerator>();
 
 var app = builder.Build();
 
